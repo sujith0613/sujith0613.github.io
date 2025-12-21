@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sujith M — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@500;700&family=Lora:wght@400;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #ffffff;
       color: #111;
     }
@@ -20,14 +21,15 @@
     }
 
     img.profile {
-      width: 140px;
-      height: 140px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 24px;
+      margin-bottom: 28px;
       opacity: 0;
       transform: scale(0.96);
       animation: fadeImage 0.8s ease-out forwards;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     }
 
     @keyframes fadeImage {
@@ -35,13 +37,16 @@
     }
 
     h1 {
-      font-size: 2.2rem;
-      font-weight: 600;
-      margin-bottom: 8px;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-family: 'Montserrat', sans-serif;
       opacity: 0;
       transform: translateY(6px);
       animation: fadeTitle 0.8s ease-out forwards;
       animation-delay: 0.2s;
+      color: #1d4ed8; /* blue color for name */
+      text-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
     @keyframes fadeTitle {
@@ -63,18 +68,21 @@
       gap: 8px;
       padding: 14px 16px;
       border: 1px solid #e5e7eb;
-      border-radius: 10px;
+      border-radius: 12px;
       text-decoration: none;
       color: #111;
-      font-size: 0.9rem;
-      background: #fafafa;
+      font-size: 0.95rem;
+      background: #f3f4f6; /* light colored background */
       transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      font-family: 'Lora', serif;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     .links a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      background: #ffffff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      background: #e0f2fe; /* light blue on hover */
+      color: #1e40af;
     }
 
     .icon {
@@ -84,10 +92,9 @@
     }
 
     .quote {
-      font-size: 1.05rem;
-      color: #374151;
-      margin: 24px auto 36px;
-      max-width: 560px;
+      font-size: 1.1rem;
+      margin: 26px auto 36px;
+      max-width: 580px;
       min-height: 48px;
       font-weight: 500;
       opacity: 0;
@@ -100,15 +107,16 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .quote.font-1 { font-family: Georgia, serif; color: #374151; }
-    .quote.font-2 { font-family: "Courier New", monospace; color: #1f2937; }
-    .quote.font-3 { font-family: "Trebuchet MS", sans-serif; color: #111827; }
-    .quote.font-4 { font-family: "Times New Roman", serif; color: #4b5563; }
+    .quote.font-1 { font-family: 'Lora', serif; color: #6b21a8; } /* purple */
+    .quote.font-2 { font-family: 'Courier Prime', monospace; color: #dc2626; } /* red */
+    .quote.font-3 { font-family: 'Montserrat', sans-serif; color: #059669; } /* green */
+    .quote.font-4 { font-family: 'Roboto', sans-serif; color: #1d4ed8; } /* blue */
 
     .cursor {
       display: inline-block;
       margin-left: 2px;
       animation: blink 1s steps(2, start) infinite;
+      color: #111;
     }
 
     @keyframes blink {
@@ -116,10 +124,11 @@
     }
 
     .passion {
-      font-size: 0.95rem;
-      color: #333;
-      max-width: 520px;
+      font-size: 1rem;
+      color: #374151; /* dark gray */
+      max-width: 540px;
       margin: 0 auto;
+      font-family: 'Roboto', sans-serif;
     }
 
     footer {
@@ -131,7 +140,7 @@
 </head>
 <body>
   <div class="container">
-    <img src="profile.jpg" alt="Sujith M" class="profile">
+    <img src="profile1.jpg" alt="Sujith M" class="profile">
     <h1>Sujith M</h1>
 
     <div class="links">
