@@ -500,8 +500,7 @@
        ATROPOS
     ============================================================ */
     .atropos { width: 100%; border-radius: 1.6rem; }
-    .atropos-inner { border-radius: 1.6rem; }
-    .atropos a { pointer-events: auto; }
+    .atropos-inner { border-radius: 1.6rem; overflow: visible !important; }
 
     /* ============================================================
        LUCIDE ICON UTILITY
@@ -1136,9 +1135,7 @@
      ATROPOS — init all cards
   ================================================================ */
   document.querySelectorAll('.atropos').forEach(el => {
-    var a = Atropos({ el, activeOffset:38, shadowScale:1.04, highlight:false, rotateTouch:false });
-    (el.querySelector('.atropos-scale')||{}).style && (el.querySelector('.atropos-scale').style.pointerEvents = '');
-    (el.querySelector('.atropos-rotate')||{}).style && (el.querySelector('.atropos-rotate').style.pointerEvents = '');
+    Atropos({ el, activeOffset:38, shadowScale:1.04, highlight:false, rotateTouch:false });
   });
   </script>
 </body>
