@@ -1136,7 +1136,9 @@
      ATROPOS — init all cards
   ================================================================ */
   document.querySelectorAll('.atropos').forEach(el => {
-    Atropos({ el, activeOffset:38, shadowScale:1.04, highlight:false, rotateTouch:false });
+    var a = Atropos({ el, activeOffset:38, shadowScale:1.04, highlight:false, rotateTouch:false });
+    (el.querySelector('.atropos-scale')||{}).style && (el.querySelector('.atropos-scale').style.pointerEvents = '');
+    (el.querySelector('.atropos-rotate')||{}).style && (el.querySelector('.atropos-rotate').style.pointerEvents = '');
   });
   </script>
 </body>
